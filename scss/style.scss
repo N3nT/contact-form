@@ -1,0 +1,106 @@
+@use 'colors' as *;
+@use 'numbers' as *;
+@use 'components' as *;
+* {
+	box-sizing: border-box;
+	font-size: 10px;
+}
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100vw;
+	background-color: $green_200;
+	font-family: 'Karla', sans-serif;
+}
+.form-wrap {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: $formWrap-width;
+	height: $formWrap-height;
+	padding: $formWrap-padding;
+	margin: $formWrap-margin-tb 0;
+	background-color: $white;
+	border-radius: $borderRadius;
+	&__title {
+		width: 100%;
+		text-align: left;
+		font-size: $title-fontSize;
+		font-weight: 700;
+		margin-bottom: $gap;
+	}
+	&__person-wrap {
+		@include flex-collumn;
+		width: 100%;
+		&__name-wrap,
+		&__lastname-wrap {
+			@include flex-collumn;
+			margin-bottom: $gap;
+		}
+	}
+	&__email-wrap {
+		@include flex-collumn;
+		width: 100%;
+		margin-bottom: $gap;
+	}
+	&__query-wrap {
+		@include flex-collumn;
+		width: 100%;
+		margin-bottom: $gap;
+		&__querys {
+			@include flex-collumn;
+			&__query {
+				display: flex;
+				align-items: center;
+				padding: $query-padding;
+				@include border-style;
+				color: $grey_900;
+				&:first-of-type {
+					margin-bottom: $gap;
+				}
+				input {
+					margin-right: $gap;
+				}
+			}
+		}
+	}
+	&__message-wrap {
+		@include flex-collumn;
+		width: 100%;
+		margin-bottom: $gap;
+		textarea {
+			height: $textarea-height;
+            padding: $textarea-padding;
+            font-size: $textarea-fontSize;
+			@include border-style;
+			resize: none;
+		}
+	}
+	&__rule-wrap {
+		display: flex;
+		width: 100%;
+		font-size: $ruleWrap-fontSize;
+		margin-bottom: $gap;
+		input {
+			margin-right: $ruleInput-marginRight;
+			width: $ruleInput-width;
+		}
+		p {
+			line-height: 1.4em;
+			color: $green_600;
+		}
+	}
+	&__submit {
+		width: 100%;
+		margin-top: $gap;
+		padding: $submit-padding 0;
+		background-color: $green_600;
+		border: none;
+		border-radius: $borderRadius;
+		font-size: $submit-fontSize;
+		font-weight: 600;
+		color: $white;
+		letter-spacing: 0.05em;
+	}
+}

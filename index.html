@@ -1,24 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/components.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200..800&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Contact form</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
+  <!-- <div class="successful-wrap"></div> -->
+  <form class="form-wrap">
+    <h1 class="form-wrap__title">Contact Us</h1>
+    <div class="form-wrap__person-wrap">
+      <div class="form-wrap__person-wrap__name-wrap">
+        <label for="name">First Name*</label>
+        <input type="text" id="name" class="line-input">
+        <p class="error_label"></p>
+      </div>
+      <div class="form-wrap__person-wrap__lastname-wrap">
+        <label for="lastname">Last Name*</label>
+        <input type="text" id="lastname" class="line-input">
+        <p class="error_label"></p>
+      </div>
+    </div>
+    <div class="form-wrap__email-wrap">
+      <label for="email">Email Address*</label>
+      <input type="text" id="email" class="line-input">
+      <p class="error_label"></p>
+    </div>
+    <div class="form-wrap__query-wrap">
+      <label for="query">Query Type*</label>
+      <div class="form-wrap__query-wrap__querys">
+        <div class="form-wrap__query-wrap__querys__query">
+          <input type="checkbox">
+          <p>General Enquiry</p>
+        </div>
+        <div class="form-wrap__query-wrap__querys__query">
+          <input type="checkbox">
+          <p>Support Request</p>
+        </div>
+      </div>
+      <p class="error_label"></p>
+    </div>
+    <div class="form-wrap__message-wrap">
+      <label for="message">Message*</label>
+      <textarea id="message"></textarea>
+      <p class="error_label"></p>
+    </div>
+    <div class="form-wrap__rule-wrap">
+      <input type="checkbox" name="" id="">
+      <p>I consent to being contacted by the team*</p>
+      <p class="error_label"></p>
+    </div>
+    <input class="form-wrap__submit" type="submit" value="Submit">
+  </form>
 
-  Contact Us
 
-  First Name
+  <!-- First Name
   This field is required
 
   Last Name
@@ -42,11 +88,8 @@
   Submit
 
   Message Sent!
-  Thanks for completing the form. We'll be in touch soon!
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  Thanks for completing the form. We'll be in touch soon! -->
+
 </body>
+
 </html>

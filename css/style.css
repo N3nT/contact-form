@@ -1,0 +1,124 @@
+label {
+  margin-bottom: 0.5em;
+  color: hsl(187, 24%, 22%);
+}
+
+.line-input {
+  padding: 0.8em;
+  border-radius: 10px;
+  border: 1px solid hsl(186, 15%, 59%);
+  font-size: 1.1rem;
+}
+
+* {
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  background-color: hsl(148, 38%, 91%);
+  font-family: "Karla", sans-serif;
+}
+
+.form-wrap {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 350px;
+  height: 1100px;
+  padding: 1.5em;
+  margin: 3em 0;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 1em;
+}
+.form-wrap__title {
+  width: 100%;
+  text-align: left;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+.form-wrap__person-wrap {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.form-wrap__person-wrap__name-wrap, .form-wrap__person-wrap__lastname-wrap {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+.form-wrap__email-wrap {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 1em;
+}
+.form-wrap__query-wrap {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 1em;
+}
+.form-wrap__query-wrap__querys {
+  display: flex;
+  flex-direction: column;
+}
+.form-wrap__query-wrap__querys__query {
+  display: flex;
+  align-items: center;
+  padding: 1em;
+  border: 1px solid hsl(186, 15%, 59%);
+  border-radius: 1em;
+  color: hsl(187, 24%, 22%);
+}
+.form-wrap__query-wrap__querys__query:first-of-type {
+  margin-bottom: 1em;
+}
+.form-wrap__query-wrap__querys__query input {
+  margin-right: 1em;
+}
+.form-wrap__message-wrap {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 1em;
+}
+.form-wrap__message-wrap textarea {
+  height: 300px;
+  padding: 1em;
+  font-size: 1em;
+  border: 1px solid hsl(186, 15%, 59%);
+  border-radius: 1em;
+  resize: none;
+}
+.form-wrap__rule-wrap {
+  display: flex;
+  width: 100%;
+  font-size: 1rem;
+  margin-bottom: 1em;
+}
+.form-wrap__rule-wrap input {
+  margin-right: 1em;
+  width: 2em;
+}
+.form-wrap__rule-wrap p {
+  line-height: 1.4em;
+  color: hsl(169, 82%, 27%);
+}
+.form-wrap__submit {
+  width: 100%;
+  margin-top: 1em;
+  padding: 1em 0;
+  background-color: hsl(169, 82%, 27%);
+  border: none;
+  border-radius: 1em;
+  font-size: 1rem;
+  font-weight: 600;
+  color: hsl(0, 0%, 100%);
+  letter-spacing: 0.05em;
+}/*# sourceMappingURL=style.css.map */

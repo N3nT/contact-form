@@ -1,0 +1,11 @@
+label {
+  margin-bottom: 0.5em;
+  color: hsl(187, 24%, 22%);
+}
+
+.line-input {
+  padding: 0.8em;
+  border-radius: 10px;
+  border: 1px solid hsl(186, 15%, 59%);
+  font-size: 1.1rem;
+}/*# sourceMappingURL=components.css.map */
