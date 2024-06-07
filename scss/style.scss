@@ -56,6 +56,13 @@ body {
 				padding: $query-padding;
 				@include border-style;
 				color: $grey_900;
+                transition: border-color .3s, background-color .3s;
+                cursor: pointer;
+                &:hover{
+                    border-color: $grey_900;
+                    background-color: $green_200;
+                    color: $green_600;
+                }
 				&:first-of-type {
 					margin-bottom: $gap;
 				}
@@ -88,7 +95,11 @@ body {
 		}
 		p {
 			line-height: 1.4em;
-			color: $green_600;
+			color: $grey_900;
+            cursor: pointer;
+            &:hover{
+                color: $green_600;
+            }
 		}
 	}
 	&__submit {
@@ -102,5 +113,6 @@ body {
 		font-weight: 600;
 		color: $white;
 		letter-spacing: 0.05em;
+        cursor: pointer;
 	}
 }

@@ -9,6 +9,15 @@ label {
 	border-radius: 10px;
 	border: 1px solid $grey_500;
     font-size: 1.1rem;
+    cursor: pointer;
+    transition: border-color .3s;
+    &:hover{
+        border-color: $grey_900;
+    }
+}
+.error-label{
+    margin-top: 0.5em;
+    color: $red;
 }
 @mixin flex-collumn{
     display: flex;
