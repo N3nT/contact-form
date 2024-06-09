@@ -4,7 +4,7 @@ $title-fontSize: 1.8rem;
 $borderRadius: 1em;
 $input-fontSize: 2em;
 // Form Wrap
-$formWrap-height: 1150px;
+$formWrap-height: 1000px;
 $formWrap-width: 350px;
 $formWrap-padding: 1.5em;
 $formWrap-margin-tb: 3em; //tb = top,bottom
@@ -21,3 +21,13 @@ $query-padding: 1em;
 //Submit
 $submit-padding: 1em;
 $submit-fontSize: 1rem;
+
+//576px
+$small-formWrap-width: 500px;
+
+//768px
+$medium-formWrap-width: 700px;
+
+//992px
+$large-formWrap-height: 800px;
+$large-formWrap-width: 900px;

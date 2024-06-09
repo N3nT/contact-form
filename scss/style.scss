@@ -1,6 +1,7 @@
 @use 'colors' as *;
 @use 'numbers' as *;
 @use 'components' as *;
+@use 'media' as *;
 * {
 	box-sizing: border-box;
 	font-size: 10px;
@@ -18,7 +19,7 @@ body {
 	align-items: center;
 	flex-direction: column;
 	width: $formWrap-width;
-	height: $formWrap-height;
+	min-height: $formWrap-height;
 	padding: $formWrap-padding;
 	margin: $formWrap-margin-tb 0;
 	background-color: $white;
@@ -106,20 +107,24 @@ body {
 	}
 	&__rule-wrap {
 		display: flex;
+		flex-direction: column;
 		width: 100%;
 		font-size: $ruleWrap-fontSize;
 		margin-bottom: $gap;
-		input {
-			margin-right: $ruleInput-marginRight;
-			width: $ruleInput-width;
-			accent-color: $green_600;
-		}
-		p {
-			line-height: 1.4em;
-			color: $grey_900;
-			cursor: pointer;
-			&:hover {
-				color: $green_600;
+		&__checkbox-wrap{
+			display: flex;
+			input {
+				margin-right: $ruleInput-marginRight;
+				width: $ruleInput-width;
+				accent-color: $green_600;
+			}
+			&__label {
+				line-height: 1.4em;
+				color: $grey_900;
+				cursor: pointer;
+				&:hover {
+					color: $green_600;
+				}
 			}
 		}
 	}
@@ -135,5 +140,41 @@ body {
 		color: $white;
 		letter-spacing: 0.05em;
 		cursor: pointer;
+	}
+}
+@media screen and (min-width: 576px) {
+	.form-wrap{
+		width: $small-formWrap-width;
+	}
+}
+@media screen and (min-width: 768px) {
+	.form-wrap{
+		width: $medium-formWrap-width;
+	}
+}
+@media screen and (min-width: 992px){
+	.form-wrap{
+		min-height: $large-formWrap-height;
+		width: $large-formWrap-width;
+		&__person-wrap{
+			flex-direction: row;
+			justify-content: space-between;
+			&__name-wrap,&__lastname-wrap{
+				width: 49%;
+			}
+		}
+		&__query-wrap{
+			&__querys {
+				flex-direction: row;
+				justify-content: space-between;
+				&__query{
+					width: 49%;
+					border-radius: $borderRadius;
+					&:first-of-type{
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
 	}
 }
