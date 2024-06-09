@@ -56,18 +56,38 @@ body {
 				padding: $query-padding;
 				@include border-style;
 				color: $grey_900;
-                transition: border-color .3s, background-color .3s;
-                cursor: pointer;
-                &:hover{
-                    border-color: $grey_900;
-                    background-color: $green_200;
-                    color: $green_600;
-                }
+				transition: border-color 0.3s, background-color 0.3s;
+				cursor: pointer;
+				&:hover {
+					border-color: $grey_900;
+					background-color: $green_200;
+					color: $green_600;
+				}
 				&:first-of-type {
 					margin-bottom: $gap;
 				}
-				input {
+				&--radio {
 					margin-right: $gap;
+					appearance: none;
+					width: 15px;
+					height: 15px;
+					border-radius: 50%;
+					outline: none;
+					border: 1px solid $grey_500;
+					&::before {
+						content: '';
+						display: block;
+						width: 9px;
+						height: 9px;
+						margin: 2px auto;
+						border-radius: 50%;
+					}
+					&:checked::before{
+						background: $green_600;
+					}
+					&:checked{
+						border-color: $green_600;
+					}
 				}
 			}
 		}
@@ -78,8 +98,8 @@ body {
 		margin-bottom: $gap;
 		textarea {
 			height: $textarea-height;
-            padding: $textarea-padding;
-            font-size: $textarea-fontSize;
+			padding: $textarea-padding;
+			font-size: $textarea-fontSize;
 			@include border-style;
 			resize: none;
 		}
@@ -92,14 +112,15 @@ body {
 		input {
 			margin-right: $ruleInput-marginRight;
 			width: $ruleInput-width;
+			accent-color: $green_600;
 		}
 		p {
 			line-height: 1.4em;
 			color: $grey_900;
-            cursor: pointer;
-            &:hover{
-                color: $green_600;
-            }
+			cursor: pointer;
+			&:hover {
+				color: $green_600;
+			}
 		}
 	}
 	&__submit {
@@ -113,6 +134,6 @@ body {
 		font-weight: 600;
 		color: $white;
 		letter-spacing: 0.05em;
-        cursor: pointer;
+		cursor: pointer;
 	}
 }
